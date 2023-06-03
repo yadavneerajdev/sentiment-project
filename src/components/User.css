@@ -1,0 +1,33 @@
+.user-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.user-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.user-wrapper h3 {
+    text-transform: uppercase;
+}
+
+.user-wrapper input {
+    background-color: #fff;
+    cursor: pointer;
+    color: #000;
+    padding: 1em;
+    border-radius: 3px;
+}
+
+.user-wrapper button {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0.6em;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+}

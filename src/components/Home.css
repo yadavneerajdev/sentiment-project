@@ -1,4 +1,5 @@
 .Home-wrapper {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 0.4em;
@@ -20,9 +21,13 @@
 }
 
 .Home-wrapper .home-text {
-    height: stretch;
-    width: 100%;
-    background-color: #0000003f;
+    height: 80%;
+    width: 90%;
+    background-color: #00000062;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #ffffff10;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,6 +37,18 @@
 }
 
 @media screen and (max-width: 550px) {
+
+    .Home-wrapper {
+        height: auto;
+        justify-content: start;
+        padding: 1em 0;
+    }
+
+    .Home-wrapper .home-text {
+        gap: 0.5em;
+        padding: 1.5em 0;
+    }
+
     .Home-wrapper p {
         flex-direction: column;
         text-align: center;

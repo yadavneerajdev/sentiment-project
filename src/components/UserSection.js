@@ -1,8 +1,15 @@
 import React from 'react'
+import "./User.css"
 
 const UserSection = () => {
     return (
-        <div>UserSection</div>
+        <div className='user-wrapper'>
+            <form>
+                <h3>Upload a csv/json file</h3>
+                <input type="file" />
+                <button>Submit</button>
+            </form>
+        </div>
     )
 }
 
