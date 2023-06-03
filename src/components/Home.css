@@ -1,8 +1,6 @@
 .Home-wrapper {
-    background-color: cadetblue !important;
     display: flex;
     flex-direction: column;
-    backdrop-filter: blur(10px);
     gap: 0.4em;
     align-items: center;
     justify-content: center;
@@ -21,12 +19,17 @@
     gap: 0.3em;
 }
 
-
-
-
-
-
-
+.Home-wrapper .home-text {
+    height: stretch;
+    width: 100%;
+    background-color: #0000003f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    backdrop-filter: blur(5px);
+}
 
 @media screen and (max-width: 550px) {
     .Home-wrapper p {
