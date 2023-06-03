@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+import { Routes, Route } from 'react-router-dom';
+import Home from "./components/Home"
 import './App.css';
+import NavSideBar from './components/NavSideBar';
+import Results_summary from './components/Results_summary';
+import Hero from "./components/Hero";
+import Dashboard from './components/Dashboard';
+import UserSection from "./components/UserSection";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <NavSideBar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/hero' element={<Hero />} />
+          <Route path='/user' element={<UserSection />} />
+          <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='/results' element={<Results_summary />} />
+        </Routes>
       </header>
     </div>
   );
 }
 
 export default App;
+
+
+
+// Pages we need...
+
+/*
+1. Main Hero UI page
+2. User Input Section page
+3. Dashboard of the results fetched
+4. Representation of the user input with classifications (With Pagination...)
+*/
+
+
+// Installed react-router-dom for navigation

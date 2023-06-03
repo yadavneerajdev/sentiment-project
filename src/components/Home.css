@@ -1,0 +1,36 @@
+.Home-wrapper {
+    background-color: cadetblue !important;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    gap: 0.4em;
+    align-items: center;
+    justify-content: center;
+}
+
+.Home-wrapper h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.Home-wrapper p {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3em;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 550px) {
+    .Home-wrapper p {
+        flex-direction: column;
+        text-align: center;
+    }
+}
